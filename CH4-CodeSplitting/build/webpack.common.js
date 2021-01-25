@@ -60,9 +60,14 @@ module.exports = {
 		}),
 		new CleanWebpackPlugin()
 	],
+	optimization: {
+		splitChunks: {
+			chunks: 'all'
+		}
+	},
 	output: {
 		// 打包文件的根目录文件夹
-		path: path.resolve(__dirname, 'dist'),
+		path: path.resolve(__dirname, '../dist'),
 		filename: 'bundle.js'
 	}
 };
