@@ -1,0 +1,4 @@
+li:nth-of-type(odd) {
+  color: aliceblue;
+  background-color: red;
+}
